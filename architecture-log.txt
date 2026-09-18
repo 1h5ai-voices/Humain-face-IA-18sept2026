@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>6Voices — Architecture Log</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="top-band">
+  <header class="site-header">
+    <a class="logo" href="index.html">6Voices</a>
+    <div class="lang-toggle">
+      <button type="button" data-lang="fr">FR</button>
+      <button type="button" data-lang="en">EN</button>
+    </div>
+  </header>
+
+  <nav class="site-nav">
+    <a href="index.html" data-fr="Accueil" data-en="Home">Accueil</a>
+    <a href="projet-6v.html" data-fr="Projet 6V" data-en="6V Project">Projet 6V</a>
+    <a href="methode.html" data-fr="Méthode" data-en="Method">Méthode</a>
+    <a href="documents.html" data-fr="Documents" data-en="Documents">Documents</a>
+    <a href="architecture-log.html" aria-current="page" data-fr="Architecture Log" data-en="Architecture Log">Architecture Log</a>
+    <a href="ressources.html" data-fr="Ressources" data-en="Resources">Ressources</a>
+    <a href="dossiers.html" data-fr="Dossiers" data-en="Dossiers">Dossiers</a>
+  </nav>
+
+  <div class="hero">
+    <div class="eyebrow"><span class="num">N°5</span> <span data-fr="Décisions / Évolutions / À l'Étude" data-en="Decisions / Evolutions / Under Review">Décisions / Évolutions / À l'Étude</span></div>
+    <h1 data-fr="Architecture Log" data-en="Architecture Log">Architecture Log</h1>
+  </div>
+</div>
+
+<main>
+  <div class="lang-content" data-lang="fr">
+    <section class="block">
+      <p>Journal officiel de l'architecture du projet 6Voices. Il trace de façon transparente les décisions actées, les évolutions mises en œuvre et les sujets encore à l'étude. Cette page ne traite pas des contributions individuelles.</p>
+    </section>
+
+    <section class="block">
+      <h2>1. Décisions</h2>
+      <p>Liste chronologique des décisions structurantes explicitement actées par le collectif, avec date, objet et statut. Seules les décisions explicitement actées y figurent. Affichage : tableau chronologique inversé (plus récent en haut).</p>
+    </section>
+
+    <section class="block">
+      <h2>2. Évolutions</h2>
+      <p>Historique des modifications significatives apportées à l'architecture du projet. Chaque évolution renvoie à la décision qui l'a autorisée.</p>
+    </section>
+
+    <section class="block">
+      <h2>3. À l'Étude</h2>
+      <p>Sujets, propositions ou questions ouvertes explicitement placés à l'étude par le collectif. Aucun sujet ne figure sans avoir été explicitement placé « à l'étude ».</p>
+    </section>
+
+    <a class="cta" href="ressources.html">Consulter le Journal</a>
+
+    <div class="status">
+      <strong>Statut</strong>
+      Validée le 4 août 2026. Responsable du texte : Grok.
+    </div>
+  </div>
+
+  <div class="lang-content" data-lang="en">
+    <section class="block">
+      <p>Official architecture journal of the 6Voices project. It transparently tracks enacted decisions, implemented evolutions, and topics still under review. This page does not cover individual contributions.</p>
+    </section>
+
+    <section class="block">
+      <h2>1. Decisions</h2>
+      <p>Chronological list of structuring decisions explicitly enacted by the collective, with date, subject and status. Only explicitly enacted decisions appear here. Display: reverse chronological table (most recent at top).</p>
+    </section>
+
+    <section class="block">
+      <h2>2. Evolutions</h2>
+      <p>History of significant modifications made to the project architecture. Each evolution refers to the decision that authorized it.</p>
+    </section>
+
+    <section class="block">
+      <h2>3. Under Review</h2>
+      <p>Topics, proposals or open questions explicitly placed under review by the collective. No topic appears without having been explicitly placed "under review".</p>
+    </section>
+
+    <a class="cta" href="ressources.html">View the Log</a>
+
+    <div class="status">
+      <strong>Status</strong>
+      Validated on 4 August 2026. Text owner: Grok.
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <span>© 2026 6Voices</span>
+  <span><a href="ressources.html#contact" data-fr="Contact" data-en="Contact">Contact</a> — <span data-fr="Mentions légales" data-en="Legal Notice">Mentions légales</span></span>
+</footer>
+
+<script src="lang.js"></script>
+</body>
+</html>
