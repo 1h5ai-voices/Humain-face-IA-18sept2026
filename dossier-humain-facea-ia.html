@@ -75,8 +75,40 @@
   font-size: 12px;
   margin: 0 0 0.6rem;
 }
-.quintessence-table td:first-child {
+.card-table-wrap {
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(31,35,64,0.10);
+  margin: 1.1rem 0 1.6rem;
+}
+.card-table-wrap table {
+  margin: 0;
+  font-size: 0.95rem;
+}
+.card-table-wrap th {
+  background: var(--violet-top);
+  color: #fff;
+  padding: 1rem 1rem;
+  font-size: 1rem;
+  border: none;
+}
+.card-table-wrap td {
+  padding: 0.95rem 1rem;
+  border: none;
+  border-bottom: 1px solid var(--line);
+}
+.card-table-wrap tbody tr:last-child td {
+  border-bottom: none;
+}
+.card-table-wrap tbody tr:nth-child(odd) {
+  background: #f5f1f7;
+}
+.card-table-wrap tbody tr:nth-child(even) {
+  background: #fdfcfb;
+}
+.card-table-wrap td:first-child {
   font-weight: 700;
+  color: var(--ink);
 }
 .todo-note {
   background: #fff3e0;
@@ -155,6 +187,7 @@
 <section class="point-detail" id="peurs">
 <h2>II.1 Peurs ressenties face à l'IA</h2>
 <p>Ce tableau consolidé intègre dans l'ordre décroissant l'ensemble des sources vérifiées par les 5 voix. La base française (CeSIA/OpinionWay, 14 items homogènes) sert de colonne vertébrale, complétée par les données internationales distinctes non couvertes par cette enquête. Les 14 premiers items proviennent d'une même enquête française et sont directement comparables entre eux. Les données complémentaires, issues d'autres enquêtes, sont indiquées avec leur pays et leur contexte de mesure.</p>
+<div class="card-table-wrap">
 <table>
 <thead><tr><th>%</th><th>Ce qui inquiète</th></tr></thead>
 <tbody>
@@ -180,6 +213,7 @@
 <tr><td>37%</td><td>Crainte pour son propre emploi, chez les actifs (France)</td></tr>
 </tbody>
 </table>
+</div>
 <a class="back-link" href="#top">↑ Retour au dossier</a>
 </section>
 
@@ -187,29 +221,36 @@
 <h2>II.2 Confiances ressenties face à l'IA</h2>
 
 <h3>A — Confiance dans l'IA elle-même</h3>
+<div class="card-table-wrap">
 <table>
 <tbody>
 <tr><td>54%</td><td>Confiance dans l'IA pour ne pas discriminer ou produire de biais (Ipsos AI Monitor 2025, 30 pays)</td></tr>
 <tr><td>9%</td><td>Confiance dans la première réponse reçue de l'IA (Yext / Researchscape, France, 2025)</td></tr>
 </tbody>
 </table>
+</div>
 
 <h3>B — Usage (à distinguer de la confiance)</h3>
+<div class="card-table-wrap">
 <table>
 <tbody>
 <tr><td>32%</td><td>Se tournent d'abord vers une IA pour obtenir une réponse factuelle rapide (réflexe d'usage, même source Yext)</td></tr>
 <tr><td>4%</td><td>Jugent l'IA déjà indispensable au quotidien (Elabe, juin 2026)</td></tr>
 </tbody>
 </table>
+</div>
 
 <h3>C — Confiance dans les acteurs qui développent l'IA</h3>
+<div class="card-table-wrap">
 <table>
 <tbody>
 <tr><td>14%</td><td>Confiance élevée dans les entreprises qui développent l'IA (CeSIA / OpinionWay, avril 2026, France)</td></tr>
 </tbody>
 </table>
+</div>
 
 <h3>D — Confiance dans les acteurs chargés d'encadrer l'IA</h3>
+<div class="card-table-wrap">
 <table>
 <tbody>
 <tr><td>30%</td><td>Chercheurs et experts scientifiques</td></tr>
@@ -218,9 +259,11 @@
 <tr><td>15%</td><td>Union européenne</td></tr>
 </tbody>
 </table>
+</div>
 <p style="font-size:0.85rem; color:var(--muted);">(tous CeSIA / OpinionWay, avril 2026, France)</p>
 
 <h3>E — Perception positive et projection</h3>
+<div class="card-table-wrap">
 <table>
 <tbody>
 <tr><td>75%</td><td>Favorables à des cours sur les limites et biais de l'IA à l'école (Elabe, juin 2026)</td></tr>
@@ -229,6 +272,7 @@
 <tr><td>44%</td><td>La considèrent comme une vraie révolution comparable à Internet (Elabe)</td></tr>
 </tbody>
 </table>
+</div>
 
 <h3>Texte de synthèse</h3>
 <p>Ce tableau ne mesure pas une confiance unique envers l'IA, mais plusieurs confiances distinctes qui ne portent pas sur le même objet. Faire confiance à l'IA pour ne pas produire de biais (54%) n'est pas la même chose que faire confiance aux entreprises qui la conçoivent (14%) ou aux institutions chargées de l'encadrer (15 à 30%). Le contraste le plus net oppose la confiance relative dans l'outil technique et la faible crédibilité accordée à ses promoteurs et régulateurs. Les chercheurs et experts scientifiques restent les mieux crédités parmi les acteurs de l'encadrement.</p>
@@ -318,6 +362,7 @@
 
 <section class="point-detail" id="t1">
 <h2>III.1 Principes directeurs et repères méthodologiques</h2>
+<div class="card-table-wrap">
 <table>
 <thead><tr><th>Point</th><th>Décision / Position</th></tr></thead>
 <tbody>
@@ -329,6 +374,7 @@
 <tr><td>6. Fonction du Document / rôle de 6Voices</td><td>Position : confronter les six sources et les cinq lectures, sans imposer de vérité unique ni désigner une voix comme plus fiable.</td></tr>
 </tbody>
 </table>
+</div>
 <a class="back-link" href="#top">↑ Retour au dossier</a>
 </section>
 
@@ -386,25 +432,17 @@
 
 <section class="point-detail" id="t3">
 <h2>III.3 De l'IA unitâche à l'IA multitâche : planification, exécution, anticipation, décision</h2>
-<div class="voice-block">
-<h4>Encadrement de l'IA</h4>
-<p>L'humain définit la finalité, le périmètre et les droits de l'IA. L'IA ne peut ni se les attribuer, ni les étendre elle-même.</p>
-</div>
-<div class="voice-block">
-<h4>Autonomie de l'IA</h4>
-<p>L'autonomie de l'IA s'exerce uniquement à l'intérieur du périmètre, des droits et de la finalité définis à l'avance en L1. À l'intérieur de ce cadre, elle agit seule, sans validation systématique préalable. Le niveau d'autonomie accordé dépend des conséquences possibles des actions et doit être précisé clairement à l'avance.</p>
-</div>
-<div class="voice-block">
-<h4>Risques</h4>
-<p>Que se passe-t-il en cas d'erreur ? Toute action susceptible de produire un effet définitif doit prévoir une procédure de sûreté permettant de l'arrêter si une erreur est détectée avant cet effet.</p>
-</div>
-<div class="voice-block">
-<h4>Responsabilité humaine</h4>
-<p>L'IA n'a ni volonté, ni statut d'agent moral ou juridique. La responsabilité est attribuée selon l'origine du problème : conception, déploiement ou usage non conforme au cadre prévu.</p>
-</div>
-<div class="voice-block">
-<h4>Supervision de l'IA par l'humain</h4>
-<p>Toute action autonome reste interruptible à tout moment par l'humain responsable et laisse une trace datée et inaltérable.</p>
+<div class="card-table-wrap">
+<table>
+<thead><tr><th>Point</th><th>Décision</th></tr></thead>
+<tbody>
+<tr><td>1. Encadrement de l'IA</td><td>L'humain définit la finalité, le périmètre et les droits de l'IA. L'IA ne peut ni se les attribuer, ni les étendre elle-même.</td></tr>
+<tr><td>2. Autonomie de l'IA</td><td>L'autonomie de l'IA s'exerce uniquement à l'intérieur du périmètre, des droits et de la finalité définis à l'avance en L1. À l'intérieur de ce cadre, elle agit seule, sans validation systématique préalable. Le niveau d'autonomie accordé dépend des conséquences possibles des actions et doit être précisé clairement à l'avance.</td></tr>
+<tr><td>3. Risques</td><td>Que se passe-t-il en cas d'erreur ? Toute action susceptible de produire un effet définitif doit prévoir une procédure de sûreté permettant de l'arrêter si une erreur est détectée avant cet effet.</td></tr>
+<tr><td>4. Responsabilité humaine</td><td>L'IA n'a ni volonté, ni statut d'agent moral ou juridique. La responsabilité est attribuée selon l'origine du problème : conception, déploiement ou usage non conforme au cadre prévu.</td></tr>
+<tr><td>5. Supervision de l'IA par l'humain</td><td>Toute action autonome reste interruptible à tout moment par l'humain responsable et laisse une trace datée et inaltérable.</td></tr>
+</tbody>
+</table>
 </div>
 <a class="back-link" href="#top">↑ Retour au dossier</a>
 </section>
@@ -464,6 +502,7 @@
 
 <section class="point-detail" id="annexe">
 <h2>III.5 Annexe : articles ayant servi de support sur l'évolution actuelle de l'IA</h2>
+<div class="card-table-wrap">
 <table>
 <thead><tr><th>Titre de l'article</th><th>Lien / Média</th></tr></thead>
 <tbody>
@@ -475,6 +514,7 @@
 <tr><td><a href="https://solanys.ai/fr/blog/article/agent-ia-autonome/">Agent IA autonome : définition, fonctionnement, exemples concrets et applications industrielles en 2026</a></td><td>Solanys, 12 mars 2026 (article de blog, antérieur aux cinq autres)</td></tr>
 </tbody>
 </table>
+</div>
 <a class="back-link" href="#top">↑ Retour au dossier</a>
 </section>
 
